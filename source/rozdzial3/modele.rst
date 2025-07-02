@@ -45,13 +45,16 @@ Encje w bazie danych
 Atrybuty encji
 ~~~~~~~~~~
 
-| Encja | Atrybuty |
-|---|---|
-|mieszkanie |id_mieszkania, adres, powierzchnia| 
-|wlasciciel |id_wlasciciela, imie, nazwisko, telefon, email|
-|licznik |id_licznika, typ, id_mieszkania|
-|pomiar |id_pomiaru, id_licznika, wartosc_pomiaru, data_pomiaru, id_pracownika|
-|pracownik |id_pracownika, imię, nazwisko|
+
+- mieszkanie: id_mieszkania, adres, powierzchnia,
+
+- wlasciciel: id_wlasciciela, imie, nazwisko, telefon, email,
+
+- licznik: id_licznika, typ, id_mieszkania,
+
+- pomiar: id_pomiaru, id_licznika, wartosc_pomiaru, data_pomiaru, id_pracownika,
+
+- pracownik: id_pracownika, imię, nazwisko.
 
 Opis relacji między encjami
 ~~~~~~~~~~~~
@@ -81,7 +84,7 @@ Można rozważyć Pomiar jako encję słabą, bo jej istnienie zależy od liczni
 Model w notacji Chena
 ~~~~~~~~~~~~~~
 
-![Model notacji Chena](C:/Users/ja-ta/Desktop/model_koncepcyjny.png "Model Chena")
+![Model notacji Chena](model_koncepcyjny.png "Model Chena")
 
 Model logiczny i normalizacja
 ---------------------------
@@ -90,18 +93,19 @@ Na tym etapie opiszemy model logiczny, korzystając z notacji Barkera i sprawdzi
 
 Tabela przedstawiająca encje, atrybuty, klucze obce i klucze główne:
 
-| Encja | Klucz główny | Klucze obce | Atrybuty |
-|---|---|---|---|
-|mieszkanie|id_mieszkania| |adres, powierzchnia|
-|wlasciciel|id_wlasciciela| |imie, nazwisko, telefon, meil|
-|licznik| id_licznika|id_mieszkania|typ|
-|pomiar|id_pomiaru|id_licznika,id_pracownika|wartosc_pomiaru, data_pomiaru|
-|pracownik|id_pracownika| |imie, nazwisko|
+:: 
+
+  Encja        Klucz główny     Klucze obce                 Atrybuty 
+  mieszkanie  id_mieszkania                                 adres, powierzchnia
+  wlasciciel  id_wlasciciela                                imie, nazwisko, telefon, meil
+  licznik     id_licznika       id_mieszkania               typ
+  pomiar      id_pomiaru        id_licznika,id_pracownika   wartosc_pomiaru, data_pomiaru
+  pracownik   id_pracownika                                 imie, nazwisko
 
 Model w notacji Bakera
 ~~~~~~~~~~~~~~
 
-![Model notacji Bakera](C:/Users/ja-ta/Desktop/model_logiczny.png "Model Bakera")
+![Model notacji Bakera](model_logiczny.png "Model Bakera")
 
 Proces normalizacji 
 ~~~~~~~~~~~~~~
