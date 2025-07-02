@@ -3,5 +3,5 @@ Wprowadzenie
 ==================
 
 
-Prowadzący:  
-Kurs:  
+Prowadzący:  dr inż. Piotr Czaja
+Kurs:  Bazy dancyh 1
