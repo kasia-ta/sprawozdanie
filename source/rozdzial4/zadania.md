@@ -37,7 +37,99 @@ Widzimy zatem, że do podsumowania naszej bazy danych, możemy użyć wielu dost
 Wyszukiwanie bez znajomości SQLite
 ------------------------------
 
+Każda funkcja korzysta z bazy SQLite i automatycznie wykonuje zapytania bez potrzeby znajomości SQL.
 
+Moduł zawiera funkcje do wyszukiwania:
+-Pomiarów po nazwisku właściciela:
+
+```
+import sqlite3
+import pandas as pd
+
+def connect(db_file='test.db'):
+    return sqlite3.connect(db_file)
+
+def find_by_owner_lastname(nazwisko, db_file='test.db'):
+    conn = connect(db_file)
+    query = """
+    SELECT wlasciciel.imie, wlasciciel.nazwisko, mieszkanie.adres, licznik.typ, pomiar.wartosc_pomiaru, pomiar.data_pomiaru
+    FROM wlasciciel
+    JOIN licznik ON wlasciciel.id_wlasciciela = licznik.id_mieszkania
+    JOIN mieszkanie ON licznik.id_mieszkania = mieszkanie.id_mieszkania
+    JOIN pomiar ON licznik.id_licznika = pomiar.id_licznika
+    WHERE wlasciciel.nazwisko LIKE ?
+    """
+    df = pd.read_sql_query(query, conn, params=(f"%{nazwisko}%",))
+    conn.close()
+    return df
+```
+
+-Pomiarów po adresie mieszkania
+
+```
+def find_by_address(adres_fragment, db_file='test.db'):
+    conn = connect(db_file)
+    query = """
+    SELECT mieszkanie.adres, licznik.typ, pomiar.wartosc_pomiaru, pomiar.data_pomiaru
+    FROM mieszkanie
+    JOIN licznik ON mieszkanie.id_mieszkania = licznik.id_mieszkania
+    JOIN pomiar ON licznik.id_licznika = pomiar.id_licznika
+    WHERE mieszkanie.adres LIKE ?
+    """
+    df = pd.read_sql_query(query, conn, params=(f"%{adres_fragment}%",))
+    conn.close()
+    return df
+```
+
+-Pomiarów w zakresie dat
+
+```
+def find_by_date_range(start_date, end_date, db_file='test.db'):
+    conn = connect(db_file)
+    query = """
+    SELECT * FROM pomiar
+    WHERE data_pomiaru BETWEEN ? AND ?
+    """
+    df = pd.read_sql_query(query, conn, params=(start_date, end_date))
+    conn.close()
+    return df
+```
+
+-Pomiarów wykonanych przez pracownika
+
+```
+def find_by_worker(worker_id, db_file='test.db'):
+    conn = connect(db_file)
+    query = """
+    SELECT pracownik.imie, pracownik.nazwisko, licznik.typ, pomiar.wartosc_pomiaru, pomiar.data_pomiaru
+    FROM pracownik
+    JOIN pomiar ON pracownik.id_pracownika = pomiar.id_pracownika
+    JOIN licznik ON pomiar.id_licznika = licznik.id_licznika
+    WHERE pracownik.id_pracownika = ?
+    """
+    df = pd.read_sql_query(query, conn, params=(worker_id,))
+    conn.close()
+    return df
+```
+
+-Pomiarów dla konkretnego licznika
+
+```
+def find_by_meter(meter_id, db_file='test.db'):
+    conn = connect(db_file)
+    query = """
+    SELECT licznik.typ, mieszkanie.adres, pomiar.wartosc_pomiaru, pomiar.data_pomiaru
+    FROM licznik
+    JOIN mieszkanie ON licznik.id_mieszkania = mieszkanie.id_mieszkania
+    JOIN pomiar ON licznik.id_licznika = pomiar.id_licznika
+    WHERE licznik.id_licznika = ?
+    """
+    df = pd.read_sql_query(query, conn, params=(meter_id,))
+    conn.close()
+    return df
+```
+
+Dzięki tym funkcjom kazdy może wyszukać interesujące go informacje z bazy danych, nawet bez znajomości składni SQLite.
 
 Migrowanie danych z SQLite do PostgreSQL
 -------------------------------
@@ -90,18 +182,14 @@ Pomiar czasu wykonania zapytań i analiza wydajności w PostgreSQL
 **Pomiar czasu wykonania zapytań:**
 Można użyć w Pythonie modułu ``time`` lub ``timeit``, np.:
 
-
- ``import time``
- 
-``start = time.time()``
-
-  ``cursor.execute("SELECT * FROM Pomiar WHERE wartosc_pomiaru > 100")``
-  
-  ``result = cursor.fetchall()``
-  
-  ``end = time.time()``
-  
-  ``print(f"Czas wykonania zapytania: {end - start:.4f} s")``
+```
+import time
+start = time.time()
+cursor.execute("SELECT * FROM Pomiar WHERE wartosc_pomiaru > 100")
+result = cursor.fetchall()
+end = time.time()
+print(f"Czas wykonania zapytania: {end - start:.4f} s")
+```
 
 
 **Wykorzystanie EXPLAIN:**
