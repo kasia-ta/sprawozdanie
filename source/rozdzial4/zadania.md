@@ -1,3 +1,38 @@
+Funkcje podsumowujące bazę danych
+--------------------------------------
+
+Do podsumowania danych, użyłam takich bibliotek jak:
+- pandas – pozwala wczytywać dane z bazy i je przetwarzać w wygodnej formie tabeli.
+
+- matplotlib.pyplot – służy do tworzenia wykresów (liniowych, słupkowych, itd.).
+
+Funkcja, która napisałam, pobiera dane z tabel(w moim przykładzie z tabeli pomiar), przetwarza dane i tworzy 2 różne wykresy. 
+
+W podsumowaniu dostajemy zarówno statystyki tekstowe, jak i różne wykresy.  Funkcja wyświetla podstawowe statystyki kolumny wartosc_pomiaru, takie jak:
+- count – ile jest wartości,
+
+- mean – średnia,
+
+- std – odchylenie standardowe,
+
+- min – najmniejsza wartość,
+
+- 25%, 50%, 75% – kwartyle,
+
+- max – maksymalna wartość.
+
+Pierwszy wykres dotyczy pomiarów wykonanych przez jednego pracownika. Dostajemy wykres liniowy, w którym na osi X zaznaczono daty pomiarów, a na osi Y wartość pomiaru. 
+
+Drugim wykresem jest histogram w którym zostały przedstawione średnie wartości dla 5 wybranych liczników. 
+
+Widzimy zatem, że do podsumowania naszej bazy danych, możemy użyć wielu dostępnych narzędzi. Podsumowanie możemy przedstawić za pomocą wykresów (liniowych, histogramu, kołowych itp.), a także słownie, przedstawiając najważniejsze statystyki. To co opisałam dla tabeli pomiar, możemy oczywiście zrobić dla pozostałych tabeli, podsumowując te informacje na których nam zależy. 
+
+
+Wyszukiwanie bez znajomości SQLite
+------------------------------
+
+
+
 Migrowanie danych z SQLite do PostgreSQL
 -------------------------------
 
