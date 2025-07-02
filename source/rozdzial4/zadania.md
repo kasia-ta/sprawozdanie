@@ -21,9 +21,15 @@ W podsumowaniu dostajemy zarówno statystyki tekstowe, jak i różne wykresy.  F
 
 - max – maksymalna wartość.
 
+  ![Statystyki pomiaru](pod-teksowe.png)
+
 Pierwszy wykres dotyczy pomiarów wykonanych przez jednego pracownika. Dostajemy wykres liniowy, w którym na osi X zaznaczono daty pomiarów, a na osi Y wartość pomiaru. 
 
+![Wykres pomiarów jednego pracownika](wykres1.png)
+
 Drugim wykresem jest histogram w którym zostały przedstawione średnie wartości dla 5 wybranych liczników. 
+
+![Histogram średnie wartości pomiarów](wykres2.png)
 
 Widzimy zatem, że do podsumowania naszej bazy danych, możemy użyć wielu dostępnych narzędzi. Podsumowanie możemy przedstawić za pomocą wykresów (liniowych, histogramu, kołowych itp.), a także słownie, przedstawiając najważniejsze statystyki. To co opisałam dla tabeli pomiar, możemy oczywiście zrobić dla pozostałych tabeli, podsumowując te informacje na których nam zależy. 
 
