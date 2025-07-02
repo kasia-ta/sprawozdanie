@@ -90,14 +90,15 @@ Na tym etapie opiszemy model logiczny, korzystając z notacji Barkera i sprawdzi
 
 Tabela przedstawiająca encje, atrybuty, klucze obce i klucze główne:
 
-:: 
+ 
 
-  Encja        Klucz główny     Klucze obce                 Atrybuty 
-  mieszkanie  id_mieszkania                                 adres, powierzchnia
-  wlasciciel  id_wlasciciela                                imie, nazwisko, telefon, meil
-  licznik     id_licznika       id_mieszkania               typ
-  pomiar      id_pomiaru        id_licznika,id_pracownika   wartosc_pomiaru, data_pomiaru
-  pracownik   id_pracownika                                 imie, nazwisko
+ | Encja      |  Klucz główny   |  Klucze obce   |              Atrybuty |
+ |---|---|---|---|
+  |mieszkanie | id_mieszkania   |                            |  adres, powierzchnia|
+ | wlasciciel  |id_wlasciciela |                             |  imie, nazwisko, telefon, meil|
+ | licznik   |  id_licznika     |  id_mieszkania             |  typ|
+|  pomiar     | id_pomiaru      |  id_licznika,id_pracownika  | wartosc_pomiaru, data_pomiaru|
+|  pracownik |  id_pracownika    |                            | imie, nazwisko|
 
 **Model w notacji Bakera**
 
