@@ -84,7 +84,7 @@ Można rozważyć Pomiar jako encję słabą, bo jej istnienie zależy od liczni
 Model w notacji Chena
 ~~~~~~~~~~~~~~
 
-![Model notacji Chena](model_koncepcyjny.png "Model Chena")
+![Model notacji Chena](model_koncepcyjny.png)
 
 Model logiczny i normalizacja
 ---------------------------
