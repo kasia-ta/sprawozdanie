@@ -32,9 +32,10 @@ Na tym etapie zidentyfikujemy encje, zdefiniujemy atrybuty, opiszemy związki, o
 Encje w bazie danych
 ~~~~~~~~~~
 
-- mieszkanie— miejsce, gdzie jest licznik,
+Encje:
+- mieszkanie — miejsce, gdzie jest licznik,
 
-- wlasciciel— osoba powiązana z mieszkaniem/licznikiem,
+- wlasciciel — osoba powiązana z mieszkaniem/licznikiem,
 
 - licznik — urządzenie mierzące zużycie mediów (woda, prąd itp.),
 
@@ -45,7 +46,7 @@ Encje w bazie danych
 Atrybuty encji
 ~~~~~~~~~~
 
-
+Atrybuty encji:
 - mieszkanie: id_mieszkania, adres, powierzchnia,
 
 - wlasciciel: id_wlasciciela, imie, nazwisko, telefon, email,
@@ -59,6 +60,7 @@ Atrybuty encji
 Opis relacji między encjami
 ~~~~~~~~~~~~
 
+Relacje:
 - mieszkanie - licznik: jeden lokal może mieć wiele liczników -> 1:N,
 
 - wlasciciel - licznik: jeden właściciel może posiadać wiele liczników -> 1:N,
@@ -70,6 +72,7 @@ Opis relacji między encjami
 Relacje niepoprawne
 ~~~~~~~~~~~~
 
+Relacje niepoprawne:
 - Przypisywanie pomiarów do niewłaściwego licznika
 
 - Pomiar bez przypisanego pracownika
@@ -105,7 +108,7 @@ Tabela przedstawiająca encje, atrybuty, klucze obce i klucze główne:
 Model w notacji Bakera
 ~~~~~~~~~~~~~~
 
-![Model notacji Bakera](model_logiczny.png "Model Bakera")
+![Model notacji Bakera](model_logiczny.png)
 
 Proces normalizacji 
 ~~~~~~~~~~~~~~
@@ -143,7 +146,6 @@ Model fizyczny SQLite
 ~~~~~~~~~~~~
 
 SQLite jest prostą bazą, bez rozbudowanych mechanizmów (np. brak zaawansowanych typów danych, brak schematów czy ról). Komendy których będziemy używali do tworzenia bazy danych:
-
 - ``CREATE TABLE`` - do utworzenia tabeli,
 
 - ``PRIMARY KEY AUTOINCREMENT`` - do utowrzenia klucza głównego,
@@ -161,5 +163,3 @@ PostgreSQL oferuje więcej typów danych, indeksów, schematów, a także zaawan
 
 - ``REFERENCES`` - do klucza obcego,
 
-Funkcje pozwalające na podsumowanie danych w bazie danych
-----------------------------
