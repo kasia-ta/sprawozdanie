@@ -47,15 +47,20 @@ Pomiar czasu wykonania zapytań i analiza wydajności w PostgreSQL
 ---------------------------------------
 
 **Pomiar czasu wykonania zapytań:**
-Można użyć w Pythonie modułu `time` lub `timeit`, np.:
-::
+Można użyć w Pythonie modułu ``time`` lub ``timeit``, np.:
 
-  import time
-  start = time.time()
-  cursor.execute("SELECT * FROM Pomiar WHERE wartosc_pomiaru > 100")
-  result = cursor.fetchall()
-  end = time.time()
-  print(f"Czas wykonania zapytania: {end - start:.4f} s")
+
+ ``import time``
+ 
+``start = time.time()``
+
+  ``cursor.execute("SELECT * FROM Pomiar WHERE wartosc_pomiaru > 100")``
+  
+  ``result = cursor.fetchall()``
+  
+  ``end = time.time()``
+  
+  ``print(f"Czas wykonania zapytania: {end - start:.4f} s")``
 
 
 **Wykorzystanie EXPLAIN:**
