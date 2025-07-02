@@ -29,8 +29,7 @@ Model koncepcyjny
 
 Na tym etapie zidentyfikujemy encje, zdefiniujemy atrybuty, opiszemy związki, określimy związki niepoprawne i zidentyfikujemy encje słabe. Model zostanie wykonany zgodnie z notacją Chena. 
 
-Encje w bazie danych
-~~~~~~~~~~
+**Encje w bazie danych**
 
 Encje:
 - mieszkanie — miejsce, gdzie jest licznik,
@@ -43,8 +42,7 @@ Encje:
 
 - pracownik — osoba dokonująca pomiaru lub aktualizacji danych.
 
-Atrybuty encji
-~~~~~~~~~~
+**Atrybuty encji**
 
 Atrybuty encji:
 - mieszkanie: id_mieszkania, adres, powierzchnia,
@@ -57,8 +55,7 @@ Atrybuty encji:
 
 - pracownik: id_pracownika, imię, nazwisko.
 
-Opis relacji między encjami
-~~~~~~~~~~~~
+**Opis relacji między encjami**
 
 Relacje:
 - mieszkanie - licznik: jeden lokal może mieć wiele liczników -> 1:N,
@@ -69,8 +66,7 @@ Relacje:
 
 - pracownik - pomiar: jeden pracownik może wykonać wiele pomiarów -> 1:N.
 
-Relacje niepoprawne
-~~~~~~~~~~~~
+**Relacje niepoprawne**
 
 Relacje niepoprawne:
 - Przypisywanie pomiarów do niewłaściwego licznika
@@ -79,13 +75,11 @@ Relacje niepoprawne:
 
 - Licznik bez powiązanego mieszkania lub właściciela
 
-Encje słabe
-~~~~~~~~
+**Encje słabe**
 
 Można rozważyć Pomiar jako encję słabą, bo jej istnienie zależy od licznika (nie ma sensu pomiar bez licznika).
 
-Model w notacji Chena
-~~~~~~~~~~~~~~
+**Model w notacji Chena**
 
 ![Model notacji Chena](model_koncepcyjny.png)
 
@@ -105,13 +99,11 @@ Tabela przedstawiająca encje, atrybuty, klucze obce i klucze główne:
   pomiar      id_pomiaru        id_licznika,id_pracownika   wartosc_pomiaru, data_pomiaru
   pracownik   id_pracownika                                 imie, nazwisko
 
-Model w notacji Bakera
-~~~~~~~~~~~~~~
+**Model w notacji Bakera**
 
 ![Model notacji Bakera](model_logiczny.png)
 
-Proces normalizacji 
-~~~~~~~~~~~~~~
+**Proces normalizacji**
 
 Etap 1 - 1NF (pierwsza postać normalna)
 
@@ -142,8 +134,7 @@ Podsumowując, mój model jest w 3NF, brak mu nadmiarowości i zależności prze
 Model fizyczny
 -------------
 
-Model fizyczny SQLite
-~~~~~~~~~~~~
+**Model fizyczny SQLite**
 
 SQLite jest prostą bazą, bez rozbudowanych mechanizmów (np. brak zaawansowanych typów danych, brak schematów czy ról). Komendy których będziemy używali do tworzenia bazy danych:
 - ``CREATE TABLE`` - do utworzenia tabeli,
@@ -152,8 +143,7 @@ SQLite jest prostą bazą, bez rozbudowanych mechanizmów (np. brak zaawansowany
 
 - ``FOREIGN KEY ... REFERENCES`` - do klucza obcego.
 
-Model fizyczny PostgreSQL
-~~~~~~~~~~~~
+**Model fizyczny PostgreSQL**
 
 PostgreSQL oferuje więcej typów danych, indeksów, schematów, a także zaawansowane mechanizmy (np. ``SERIAL``, ``UUID``, constraints). Możemy wykorzystać typ ``SERIAL`` do automatycznego zwiększania kluczy, typ ``TIMESTAMPTZ`` dla daty z czasem i strefą. Komendy których będziemy używali do tworzenia bazy danych:
 
