@@ -21,7 +21,7 @@ W podsumowaniu dostajemy zarówno statystyki tekstowe, jak i różne wykresy.  F
 
 - max – maksymalna wartość.
 
-  ![Statystyki pomiaru](pod-teksowe.png)
+  ![Statystyki pomiaru](pod-tekstowe.png)
 
 Pierwszy wykres dotyczy pomiarów wykonanych przez jednego pracownika. Dostajemy wykres liniowy, w którym na osi X zaznaczono daty pomiarów, a na osi Y wartość pomiaru. 
 
