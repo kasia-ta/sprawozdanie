@@ -1,3 +1,9 @@
 [submodule "source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja"]
 	path = source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja
 	url = https://github.com/Broksonn/Wydajnosc_Skalowanie_i_Replikacja
+[submodule "source/rozdzial2/repo-wspolne"]
+	path = source/rozdzial2/repo-wspolne
+	url = https://github.com/GrzegorzSzczepanek/repo-wspolne
+[submodule "source/rozdzial2/bezpieczenstwo"]
+	path = source/rozdzial2/bezpieczenstwo
+	url = https://github.com/BlazejUl/bezpieczenstwo
