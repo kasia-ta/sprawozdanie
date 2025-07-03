@@ -7,3 +7,9 @@
 [submodule "source/rozdzial2/bezpieczenstwo"]
 	path = source/rozdzial2/bezpieczenstwo
 	url = https://github.com/BlazejUl/bezpieczenstwo
+[submodule "source/rozdzial2/Sprzet-dla-bazy-danych"]
+	path = source/rozdzial2/Sprzet-dla-bazy-danych
+	url = https://github.com/oszczeda/Sprzet-dla-bazy-danych
+[submodule "source/rozdzial2/Konfiguracja_baz_danych"]
+	path = source/rozdzial2/Konfiguracja_baz_danych
+	url = https://github.com/Domek182/Konfiguracja_baz_danych
