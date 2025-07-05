@@ -31,7 +31,7 @@ Model koncepcyjny
 Na tym etapie zidentyfikujemy encje, zdefiniujemy atrybuty, opiszemy związki, określimy związki niepoprawne i zidentyfikujemy encje słabe. Model zostanie wykonany zgodnie z notacją Chena. 
 
 Encje w bazie danych
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Encje:
 
@@ -46,7 +46,7 @@ Encje:
 - pracownik — osoba dokonująca pomiaru lub aktualizacji danych.
 
 Atrybuty encji
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Atrybuty encji:
 
@@ -61,7 +61,7 @@ Atrybuty encji:
 - pracownik: id_pracownika, imię, nazwisko.
 
 Opis relacji między encjami
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Relacje:
 
@@ -74,7 +74,7 @@ Relacje:
 - pracownik - pomiar: jeden pracownik może wykonać wiele pomiarów -> 1:N.
 
 Relacje niepoprawne
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Relacje niepoprawne:
 
@@ -90,13 +90,13 @@ Encje słabe
 Można rozważyć Pomiar jako encję słabą, bo jej istnienie zależy od licznika (nie ma sensu pomiar bez licznika).
 
 Model w notacji Chena
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: model_koncepcyjny.png
 
 
 Model logiczny i normalizacja
----------------------------
+--------------------------------
 
 Na tym etapie opiszemy model logiczny, korzystając z notacji Barkera i sprawdzimy normalizację. 
 
@@ -118,13 +118,13 @@ Tabela przedstawiająca encje, atrybuty, klucze obce i klucze główne:
 
  
 Model w notacji Bakera
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: model_logiczny.png
 
 
 Proces normalizacji
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Etap 1 - 1NF (pierwsza postać normalna)
 
@@ -153,10 +153,10 @@ Etap 3 - 3NF (trzecia postać normalna)
 Podsumowując, mój model jest w 3NF, brak mu nadmiarowości i zależności przejściowych. Dane rozdzielone na tabele odpowiadające encjom, co umożliwia łatwe modyfikacje i zapytania, minimalizując anomalie.
 
 Model fizyczny
--------------
+----------------------
 
 Model fizyczny SQLite
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SQLite jest prostą bazą, bez rozbudowanych mechanizmów (np. brak zaawansowanych typów danych, brak schematów czy ról). Komendy których będziemy używali do tworzenia bazy danych:
 
@@ -167,7 +167,7 @@ SQLite jest prostą bazą, bez rozbudowanych mechanizmów (np. brak zaawansowany
 - ``FOREIGN KEY ... REFERENCES`` - do klucza obcego.
 
 Model fizyczny PostgreSQL
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PostgreSQL oferuje więcej typów danych, indeksów, schematów, a także zaawansowane mechanizmy (np. ``SERIAL``, ``UUID``, constraints). Możemy wykorzystać typ ``SERIAL`` do automatycznego zwiększania kluczy, typ ``TIMESTAMPTZ`` dla daty z czasem i strefą. Komendy których będziemy używali do tworzenia bazy danych:
 
