@@ -7,7 +7,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Doc'
+project = 'Sprawozdanie'
 copyright = '2025, Tarasek'
 author = 'Tarasek Katarzyna '
 release = '1.'
