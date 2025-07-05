@@ -1,6 +1,6 @@
 Opis zagadnienia
 --------------------
-author: Katarzyna Tarasek
+:author: Katarzyna Tarasek
 
 Moja baza danych będzie dotyczyła odczytywania stanu licznika. Tabele znajdujące się w bazie danych to:
 
