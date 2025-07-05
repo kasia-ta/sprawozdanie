@@ -1,16 +1,20 @@
-Bibliografia
--------------
+Repozytoria
+==========
 
-https://github.com/GrzegorzSzczepanek/repo-wspolne/tree/0e261b0e74837c01b429c09b9188cefc5cef546d
+https://github.com/oszczeda/Sprzet-dla-bazy-danych
+
+https://github.com/Chaiolites/Konfiguracja_baz_danych
+
+https://github.com/Pi0trM/Kontrola_i_konserwacja
+
+https://github.com/GrzegorzSzczepanek/repo-wspolne
 
 https://github.com/Broksonn/Wydajnosc_Skalowanie_i_Replikacja
 
-https://github.com/BlazejUl/bezpieczenstwo?fbclid=IwY2xjawLToVxleHRuA2FlbQIxMABicmlkETBrQm41QTlEaGRJd1U4YWhkAR62wZtv6YCsRqOSy6fglX0bt6eS6CWiYTkauuOw-10jZe4FI9M38EOld1_VqA_aem_NtRAnf6W-tWZza1tw3fsBQ
+https://github.com/BartekHen/Partycjonowanie-danych
 
-https://www.ssl.com/pl/artyku%C5%82/co-to-jest-ssl-tls-an-in-depth-guide/
+https://github.com/m-smieja/Kopie_zapasowe_i_odzyskiwanie_danych
 
-https://learn.microsoft.com/pl-pl/azure/postgresql/flexible-server/concepts-networking-ssl-tls
+https://github.com/BlazejUl/bezpieczenstwo
 
-https://blog.jsystems.pl/show_post/postgresql_-_uprawnienia/
-
-http://trener-it.pl/old/materialy/PostgreSQL.pdf
+https://github.com/kasia-ta/sprawozdanie
