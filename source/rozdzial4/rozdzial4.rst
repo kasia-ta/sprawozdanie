@@ -1,7 +1,7 @@
 Funkcje podsumowujące bazę danych
 --------------------------------------
 
-:author: Katarzyna Tarasek
+Autor: Katarzyna Tarasek
 
 Do podsumowania danych, użyłam takich bibliotek jak:
 
