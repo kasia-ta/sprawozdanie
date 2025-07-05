@@ -1,4 +1,4 @@
-Sprawozdanie z baz danych 1
+Wprowadzenie
 =================================
 
 Autor: Katarzyna Tarasek
@@ -6,8 +6,7 @@ Autor: Katarzyna Tarasek
 link do repozytorium:
 https://github.com/kasia-ta/sprawozdanie
 
-Wprowadzenie
-~~~~~~~~~~~~
+
 
 Pierwszym celem tego projektu jest zebranie ważnych informacji dotyczących PostgrSQL, takich jak sprzęt dla bazy danych, konfiguracja bazy danych, kontrola i konserwacja, monitorowanie i diagnostyka, wydajność, skalowanie i replikacja, partycjonowanie danych, bezpieczeństwo oraz kipie zapasowe i odzyskiwanie danych.
 
