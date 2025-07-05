@@ -10,12 +10,13 @@ Sprawozdanie
 
 
 .. toctree::
-   :maxdepth: 
+   :maxdepth: 2
    :caption: Spis treści
 
    rozdzial1/index
    rozdzial2/index
-   rozdzial3/index   
+   rozdzial3/index
    rozdzial4/index
-   rozdzial5/index  
+   rozdzial5/index
+
 
