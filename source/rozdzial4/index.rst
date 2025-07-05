@@ -1,7 +1,6 @@
+.. toctree::
+   :maxdepth: 2
+   :caption: Rozdział 4
 
-Wprowadzenie
-==================
+   rozdzial4
 
-
-Prowadzący:  
-Kurs:  
