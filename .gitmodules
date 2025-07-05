@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [submodule "source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja"]
 	path = source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja
 	url = https://github.com/Broksonn/Wydajnosc_Skalowanie_i_Replikacja
@@ -13,3 +14,11 @@
 [submodule "source/rozdzial2/Konfiguracja_baz_danych"]
 	path = source/rozdzial2/Konfiguracja_baz_danych
 	url = https://github.com/Domek182/Konfiguracja_baz_danych
+=======
+[submodule "source/rozdzial2/bezpieczenstwo"]
+	path = source/rozdzial2/bezpieczenstwo
+	url = https://github.com/BlazejUl/bezpieczenstwo.git
+[submodule "source/rozdzial2/Partycjonowanie-danych"]
+	path = source/rozdzial2/Partycjonowanie-danych
+	url = https://github.com/BartekHen/Partycjonowanie-danych
+>>>>>>> 97f5343 (Dodano submoduł Partycjonowanie-danych do source/rozdzial2)
