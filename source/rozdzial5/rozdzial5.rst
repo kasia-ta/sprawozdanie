@@ -1,5 +1,5 @@
 Repozytoria
-==========
+==============
 
 https://github.com/oszczeda/Sprzet-dla-bazy-danych
 
