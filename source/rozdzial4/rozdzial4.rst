@@ -39,7 +39,7 @@ Widzimy zatem, że do podsumowania naszej bazy danych, możemy użyć wielu dost
 
 
 Wyszukiwanie bez znajomości SQLite
-------------------------------
+----------------------------------------
 
 Każda funkcja korzysta z bazy SQLite i automatycznie wykonuje zapytania bez potrzeby znajomości SQL.
 
@@ -142,7 +142,7 @@ Moduł zawiera funkcje do wyszukiwania:
 Dzięki tym funkcjom kazdy może wyszukać interesujące go informacje z bazy danych, nawet bez znajomości składni SQLite.
 
 Migrowanie danych z SQLite do PostgreSQL
--------------------------------
+-----------------------------------------
 
 Migracja wymaga dokładnego zaplanowania, szczególnie ze względu na różnice w typach danych i funkcjonalnościach między SQLite i PostgreSQL. Automatyczne narzędzia mogą pomóc, ale ręczna weryfikacja i testy są niezbędne.
 
@@ -187,10 +187,10 @@ Prace do wykonania przy migracji SQLite do PostgreSQL oraz odwrotnie:
 - Utworzenie kopii zapasowych przed migracją.
 
 Pomiar czasu wykonania zapytań i analiza wydajności w PostgreSQL
----------------------------------------
+---------------------------------------------------------------------
 
 Pomiar czasu wykonania zapytań:
-~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                                   
 Można użyć w Pythonie modułu ``time`` lub ``timeit``, np.:
 
@@ -206,7 +206,7 @@ Można użyć w Pythonie modułu ``time`` lub ``timeit``, np.:
 
 
 Wykorzystanie EXPLAIN:
-~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - ``EXPLAIN`` pozwala zobaczyć plan wykonania zapytania przez PostgreSQL — jakie indeksy są używane, jak są łączone tabele itp.
 
@@ -215,7 +215,7 @@ Wykorzystanie EXPLAIN:
 - Na podstawie tych informacji można zoptymalizować indeksy lub zapytania.
 
 Systematyczne opisywanie wydajności:
-~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                                 
 
 - Monitorowanie czasów odpowiedzi zapytań w regularnych odstępach.
