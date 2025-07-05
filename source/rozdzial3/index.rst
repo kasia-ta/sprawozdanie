@@ -1,7 +1,5 @@
+.. toctree::
+   :maxdepth: 2
+   :caption: Rozdział 3
 
-Wprowadzenie
-==================
-
-
-Prowadzący:  dr inż. Piotr Czaja
-Kurs:  Bazy dancyh 1
+   rozdzial3
