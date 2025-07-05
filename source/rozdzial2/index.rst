@@ -1,11 +1,17 @@
+Badania literaturowe
+=================================
+
+Poniżej zamieszczono dokumentacje poszczególnych przeglądów literatury:
+
 .. toctree::
    :maxdepth: 2
+   :numbered:
 
-   Sprzet-dla-bazy-danych/index
-   Konfiguracja_baz_danych/index
-   Kontrola_i_konserwacja/index
-   repo-wspolne/index
-   Wydajnosc_Skalowanie_i_Replikacja/index
-   Partycjonowanie-danych/index
-   Kopie_zapasowe_i_odzyskiwanie_danych/index
-   bezpieczenstwo/index
+   Wydajnosc-Skalowanie-i-Replikacja/index
+   Sprzet-dla-bazy-danych/source/SprzetDlaBazyDanych
+   Konfiguracja_baz_danych/Konfiguracja_baz_danych
+   Bezpieczenstwo/index
+   Monitorowanie-i-diagnostyka/index
+   Kopie_zapasowe_i_odzyskiwanie_danych/kopie_zapasowe_i_odzyskiwanie_danych
+   Kontrola_i_konserwacja/kontrola_i_konserwacja
+   Partycjonowanie-danych/source/Partycjonowanie
