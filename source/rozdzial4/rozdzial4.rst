@@ -1,6 +1,8 @@
 Funkcje podsumowujące bazę danych
 --------------------------------------
 
+:author: Katarzyna Tarasek
+
 Do podsumowania danych, użyłam takich bibliotek jak:
 
 - pandas – pozwala wczytywać dane z bazy i je przetwarzać w wygodnej formie tabeli.
