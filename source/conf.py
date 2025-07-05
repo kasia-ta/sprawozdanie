@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Bezpieczenstwo'
+project = 'Sprawozdanie'
 copyright = '2025, Kasia Tarasek'
 author = 'Kasia Tarasek'
 release = '1'
