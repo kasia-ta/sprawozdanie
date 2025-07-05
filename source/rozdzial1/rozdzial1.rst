@@ -1,5 +1,5 @@
 Sprawozdanie z baz danych 1
-========================
+=================================
 
 Autor: Katarzyna Tarasek
 
