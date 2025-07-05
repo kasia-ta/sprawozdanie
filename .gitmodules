@@ -1,24 +1,23 @@
-<<<<<<< HEAD
 [submodule "source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja"]
-	path = source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja
-	url = https://github.com/Broksonn/Wydajnosc_Skalowanie_i_Replikacja
+    path = source/rozdzial2/Wydajnosc_Skalowanie_i_Replikacja
+    url = https://github.com/Broksonn/Wydajnosc_Skalowanie_i_Replikacja.git
+
 [submodule "source/rozdzial2/repo-wspolne"]
-	path = source/rozdzial2/repo-wspolne
-	url = https://github.com/GrzegorzSzczepanek/repo-wspolne
+    path = source/rozdzial2/repo-wspolne
+    url = https://github.com/GrzegorzSzczepanek/repo-wspolne
+
 [submodule "source/rozdzial2/bezpieczenstwo"]
-	path = source/rozdzial2/bezpieczenstwo
-	url = https://github.com/BlazejUl/bezpieczenstwo
+    path = source/rozdzial2/bezpieczenstwo
+    url = https://github.com/BlazejUl/bezpieczenstwo.git
+
 [submodule "source/rozdzial2/Sprzet-dla-bazy-danych"]
-	path = source/rozdzial2/Sprzet-dla-bazy-danych
-	url = https://github.com/oszczeda/Sprzet-dla-bazy-danych
+    path = source/rozdzial2/Sprzet-dla-bazy-danych
+    url = https://github.com/oszczeda/Sprzet-dla-bazy-danych.git
+
 [submodule "source/rozdzial2/Konfiguracja_baz_danych"]
-	path = source/rozdzial2/Konfiguracja_baz_danych
-	url = https://github.com/Domek182/Konfiguracja_baz_danych
-=======
-[submodule "source/rozdzial2/bezpieczenstwo"]
-	path = source/rozdzial2/bezpieczenstwo
-	url = https://github.com/BlazejUl/bezpieczenstwo.git
+    path = source/rozdzial2/Konfiguracja_baz_danych
+    url = https://github.com/Domek182/Konfiguracja_baz_danych.git
+
 [submodule "source/rozdzial2/Partycjonowanie-danych"]
-	path = source/rozdzial2/Partycjonowanie-danych
-	url = https://github.com/BartekHen/Partycjonowanie-danych
->>>>>>> 97f5343 (Dodano submoduł Partycjonowanie-danych do source/rozdzial2)
+    path = source/rozdzial2/Partycjonowanie-danych
+    url = https://github.com/BartekHen/Partycjonowanie-danych.git
